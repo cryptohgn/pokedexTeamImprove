@@ -1,0 +1,408 @@
+@font-face {
+    font-family: 'Pokemon Hollow';
+    src: url('./fonts/fontPokemon/Pokemon\ Hollow.ttf');
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'Pokemon Solid';
+    src: url('./fonts/fontPokemon/Pokemon\ Solid.ttf');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+header {
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories{
+    margin: 3em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pokeBall{
+    margin-left: 2em;
+    cursor: pointer;
+}
+.searcher{
+    width: 30%;
+    height: 3em;
+    border: 5px solid brown;
+    border-radius: 10px;
+    background-color: #cccccca6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+
+}
+
+.errorMsg {
+    
+    color:brown;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+.errorMsg img {
+    margin: 0 20px;
+    border-radius: 20px;
+}
+
+.pokeRender{
+    width: 20em;
+    position:absolute;
+    top: 2em;
+    left: 10px;
+    background-color: #96D9D6;
+    border-radius: 2em;
+    
+}
+
+.pokeFavGrpup {
+    display: flex;
+    flex-wrap: wrap;
+}
+.pokefavSmaller{
+    scale: 70%;
+}
+.FavTitle{
+    display: block;
+}
+.pokeFavTile{
+    display: block;
+    font-family: 'Pokemon Hollow';
+    color: brown;
+    font-size:1.5em;
+}
+main {
+    text-align: center;
+    margin: auto;
+}
+
+.intro{
+    font-family: 'Pokemon Solid';
+    font-size:2em;
+    cursor: pointer;
+}
+.intro1{
+    font-family: 'Pokemon Hollow';
+    font-size:2em;
+    color: #385BA8;
+}
+
+/*Pokemons*/
+
+.containerPokemon{
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+
+.pokeCard{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    text-align: center;
+    width: 18em;
+    height:23em;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    color: brown;
+    background-color: rgba(249, 249, 249, 0.3);
+    margin: 2em;
+    cursor: pointer;
+    padding: 1.5em;
+}
+
+
+.pokeCard:hover{
+    outline: 10px groove rgb(141, 141, 138);
+    outline-offset: 14px;
+   background-color: brown;
+   color: white;
+   scale: 110%;
+
+}
+.imgPoke{
+    width: 8em;
+}
+.idPoke {
+    margin: 0 auto;
+    border-radius: 5px;
+    width: 4em;
+    color:white;
+    background-color: grey;
+    padding: 10px;
+    
+}
+
+/*
+Tipos colores
+*/
+.tiposPoke {
+    margin: 30px 20px;
+    display: flex;
+    justify-content:space-around;
+}
+
+.normal {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    width: 5em;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #A8A77A;
+    color: black;
+    margin: 10px;;
+}
+.fire {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    width: 5em;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #EE8130;
+    color: rgb(245, 225, 6);
+    margin: 10px;
+    cursor: pointer;
+}
+
+.water {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    width: 5em;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #6390F0;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.electric {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    width: 5em;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #F7D02C;
+    color: #000;
+    margin: 10px;
+    cursor: pointer;
+}
+.grass {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    width: 5em;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #7AC74C;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.poison {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    width: 5em;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #A33EA1;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+.bug {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    width: 5em;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #A6B91A;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+.flying {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    width: 5em;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #A98FF3;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+.ground {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    width: 5em;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #E2BF65;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+.fairy {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    width: 5em;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #D685AD;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+.psychic {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    width: 5em;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #F95587;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+.fighting {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    width: 5em;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #C22E28;
+    color: black;
+    margin: 10px;
+    cursor: pointer;
+}
+.rock {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    width: 5em;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #B6A136;
+    color: black;
+    margin: 10px;
+    cursor: pointer;
+}
+.steel {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    width: 5em;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #B7B7CE;
+    color: black;
+    margin: 10px;
+    cursor: pointer;
+}
+.ice {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    width: 5em;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #96D9D6;
+    color: black;
+    margin: 10px;
+    cursor: pointer;
+}
+.ghost {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    width: 5em;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #735797;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+/*
+Fin Tipos colores
+*/
+footer{
+    text-align: center;
+}
+
+.btnPag{
+    font-size: 1em;
+    cursor: pointer;
+    background-color: aqua;
+    padding: 1em;
+}
+
+.btnPag:hover{
+    color: white;
+    background-color: brown;
+}
+
+.shadow-inset-center {
+	-webkit-animation: shadow-inset-center 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite backwards;
+	        animation: shadow-inset-center 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite backwards;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2024-1-13 19:2:39
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation shadow-inset-center
+ * ----------------------------------------
+ */
+ @-webkit-keyframes shadow-inset-center {
+    0% {
+      -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+              box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+    }
+  }
+  @keyframes shadow-inset-center {
+    0% {
+      -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+              box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+    }
+  }
+  
